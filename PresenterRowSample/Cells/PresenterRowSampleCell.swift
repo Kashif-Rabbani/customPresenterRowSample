@@ -12,8 +12,9 @@ import Eureka
 public class PresenterRowSampleCell: PushSelectorCell<String>{
     
     //MARK: - IBOutlets
-    @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var stackedLabel: UILabel!
+    
+    @IBOutlet weak var valueLabel: UILabel!
     
     override public func setup() {
         super.setup()
@@ -22,7 +23,8 @@ public class PresenterRowSampleCell: PushSelectorCell<String>{
     override public func update() {
         super.update()
         if let value = row.value{
-            self.imageIcon.image = UIImage(named: value)
+            print(value)
+            self.valueLabel.text = value
         }
     }
     

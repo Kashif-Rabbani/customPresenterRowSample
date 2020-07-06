@@ -1,5 +1,5 @@
 PODS:
-  - Eureka (5.2.0)
+  - Eureka (5.2.1)
 
 DEPENDENCIES:
   - Eureka
@@ -9,7 +9,7 @@ SPEC REPOS:
     - Eureka
 
 SPEC CHECKSUMS:
-  Eureka: 820a761c700f6eaab3b60758f138e0d9b99072b3
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
 
 PODFILE CHECKSUM: f206dd5cb38f282c440a2e60136515b58bc4ff95
 

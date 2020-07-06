@@ -26,7 +26,7 @@ public final class PresenterRowSample: Row<PresenterRowSampleCell>, RowType {
         super.customDidSelect()
         guard !isDisabled else { return }
 
-        let vc = SelectableViewController(images: ["imageA","imageB"])
+        let vc = SelectableViewController()
         vc.row = self
         cell.formViewController()?.navigationController?.pushViewController(vc, animated: true)
         vc.onDismissCallback = { _ in

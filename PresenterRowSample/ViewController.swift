@@ -10,20 +10,21 @@ import UIKit
 import Eureka
 
 class ViewController: FormViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         form +++ Section("Presenter row")
             <<< PresenterRowSample(tag: "row").cellSetup({
-        cell, row in
-        cell.stackedLabel.text = "Sample"
-        }).cellUpdate({
-            cell,row in
-            print(row.value)
-        })
+                cell, row in
+                cell.stackedLabel.text = "ROW TO SELECT"
+            }).cellUpdate({
+                cell,row in
+                print("In view controller...")
+                print(row.value)
+            })
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
 }
 
